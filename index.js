@@ -1,5 +1,5 @@
 //Node server which will handle socket io connections
-const io=require('socket.io')(80,{
+const io=require('socket.io')(process.env.PORT || 80,{
     cors:{
         origin:"*"
     }

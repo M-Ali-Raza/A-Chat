@@ -1,1 +1,1 @@
-nodemon nodeServer\index.js
+nodemon index.js
