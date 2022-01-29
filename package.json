@@ -4,7 +4,8 @@
   "description": "This is a chat application to communicate with peoples",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "author": "Ali",
   "license": "ISC",
