@@ -2,10 +2,10 @@
   "name": "nodeserver",
   "version": "1.0.0",
   "description": "This is a chat application to communicate with peoples",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon server.js"
   },
   "author": "Ali",
   "license": "ISC",
@@ -14,6 +14,7 @@
     "express": "^4.17.2",
     "http-server": "^14.1.0",
     "nodemon": "^2.0.15",
-    "socket.io": "^4.3.2"
+    "socket.io": "^4.4.1",
+    "socket.io-client": "^4.4.1"
   }
 }

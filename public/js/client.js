@@ -1,4 +1,4 @@
-const socket=io('http://localhost:3000');
+const socket=io();
 //Get DOM elements in respective js variables
 const form=document.getElementById('send-container');
 const messageInput=document.getElementById('messageInp');
@@ -34,22 +34,21 @@ const append=(message,position)=>{
     messageContainer.scrollTop = messageElement.offsetTop - 10;
 }
 //Function which will write and remove user name into user-list
-const writeName=(user)=>{
-    const nameElement=document.createElement('div');
-    nameElement.innerHTML=user;
-    nameElement.classList.add('user');
-    userList.append(nameElement);
-    socket.on('left',name=>{
-        if(nameElement.innerHTML==name){
-            nameElement.remove();
-        }
-    });
-}
-socket.on('user-joined',name=>{
-    writeName(name);
+socket.on('user-list',name=>{
+    userList.innerHTML="";
+    users_arr=Object.values(name);
+    for(i=0;i<users_arr.length;i++){
+        let p=document.createElement('p');
+        p.innerText=users_arr[i];
+        p.classList.add('user');
+        userList.appendChild(p);
+    }
 });
 //Ask new user for his/her name and let the server know
-const name=prompt("Enter your name to join");
+var name;
+do{
+    name=prompt("Enter your name to join");
+}while(!name);
 socket.emit('new-user-joined',name);
 //If a new user joins,recieve his/her name from the server
 socket.on('user-joined',name=>{
