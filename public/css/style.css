@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+.mainPage{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    background-color: rgb(94, 94, 221);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+nav h1{
+    text-align: center;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.9em;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    cursor: default;
+}
+nav h4{
+    text-align: center;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3em;
+    padding-bottom: 1%;
+    cursor: default;
+}
+.navigation{
+    width: 100vw;
+    height: 13.5vh;
+}
+.menuContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25vw;
+    display: none;
+}
+.menu{
+    padding: 1% 1.5%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.menu:hover{
+    cursor: pointer;
+}
+.userMenu{
+    border: 3px solid white;
+    color: white;
+    border-bottom: none;
+}
+.userClick{
+    color: rgb(94, 94, 221);
+    background-color: white;
+}
+.chatMenu{
+    background-color: rgb(245, 233, 212);
+    color: rgb(94, 94, 221);
+    border: 3px solid rgb(245, 233, 212);
+    border-bottom: none;
+    padding: 1% 2.5%;
+}
+.chatClick{
+    background-color: rgb(94, 94, 221);
+    color: white;
+}
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pageLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 233, 212);
+}
+.user-list{
+    width: 28.2vw;
+    height: 86.6vh;
+    border-right: 1px solid rgb(94, 94, 221);
+    overflow-y: auto;
+    overflow-x: auto;
+}
+.user{
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.9em;
+    margin-top: 5%;
+    font-weight: bold;
+    cursor: default;
+}
+.container{
+    width: 71.8vw;
+    height: 78.3vh;
+    background-color: rgb(245, 233, 212);
+    overflow-y: auto;
+}
+.messages{
+    width: 35vw;
+    padding: 1.3%;
+    margin: 2.5% 1.5%;
+    border-radius: 10px;
+    border: 1px solid rgb(94, 94, 221);
+    font-size: 1em;
+    cursor: default;
+    font-weight: bold;
+    color: white;
+}
+.left{
+    float: left;
+    clear: both;
+    background-color: white;
+    color: black;
+}
+.center{
+    float: none;
+    clear: both;
+    margin: auto;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    background-color: grey;
+    border: 1px solid black;
+    width: 16.6vw;
+}
+.right{
+    float: right;
+    clear: both;
+    background-color: rgb(94, 94, 221);
+}
+.send{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 71.7vw;
+    height: 8.3vh;
+    background-color: rgb(245, 233, 212);
+}
+#send-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#messageInp{
+    height: 3.769vh;
+    width: 62.5vw;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-size: 1.5em;
+    border: 2px solid rgb(94, 94, 221);
+    outline: none;
+    padding: 0.7%;
+}
+.btn{
+    height: 5.9vh;
+    width: 6.9vw;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 2px solid rgb(94, 94, 221);
+    background-color: rgb(94, 94, 221);
+    cursor: pointer;
+    outline: none;
+}
+.btn img{
+    height: inherit;
+    width: inherit;
+}

@@ -1,0 +1,49 @@
+.navigation{
+    height: 10.5vh;
+}
+nav h1{
+    font-size: 1.5em;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+nav h4{
+    font-size: 0.9em;
+    padding-bottom: 0%;
+}
+.menuContainer{
+    display: flex;
+    width: 100vw;
+}
+.page{
+    flex-direction: column;
+}
+.user-list{
+    width: 100vw;
+    height: 0vh;
+    border-right: none;
+}
+.height{
+    height: 86vh;
+}
+.pageLeft{
+    width: 100vw;
+    height: 86vh;
+
+}
+.container{
+    width: 100vw;
+    height: 73.1vh;
+}
+.messages{
+    width: 45vw;
+}
+.send{
+    width: 100vw;
+}
+#messageInp{
+    width: 75vw;
+}
+.btn{
+    height: 5.2vh;
+    width: 8.9vw;
+}

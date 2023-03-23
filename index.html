@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Chat</title>
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:500px)" href="css/responsive.css">
+</head>
+<body>
+    <div class="mainPage">
+        <nav>
+            <div class="navigation">
+                <h1>A-Chat</h1>
+                <h4>Realtime Chat Application</h4>
+            </div>
+            <div class="menuContainer">
+                <div class="menu userMenu"><span>Users</span></div>
+                <div class="menu chatMenu"><span>Chat</span></div>
+            </div>
+        </nav>
+        <div class="page">
+            <section class="user-list"></section>
+            <div class="pageLeft">
+                <section class="container"></section>
+                <section class="send">
+                    <form action="#" id="send-container">
+                        <input type="text" name="messageInp" id="messageInp" placeholder="Enter your message">
+                        <button class="btn" type="submit"><img src="img/send.png" alt="Send"></button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
